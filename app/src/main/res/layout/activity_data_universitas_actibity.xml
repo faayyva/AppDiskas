@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataUniversitasActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="70dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="137dp">
+
+        <ImageView
+            android:id="@+id/ImageBerhasildftr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ui_ilustrasi_1" />
+
+        <TextView
+            android:id="@+id/judul3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageBerhasildftr"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/yuk_isi_datamu_agar_kami_tau_apa_yang_kamu_mau"
+            android:textColor="#363636"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewasalUniv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/judul3"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_asal_univ"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAsalUniv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewasalUniv"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input"
+            android:hint="@string/text_masukkan_universitas"
+            android:inputType="text|textAutoComplete"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textAsalDaerah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAsalUniv"
+            android:layout_marginTop="16dp"
+            android:text="@string/text_asal_daerah"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAsalDaerah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAsalDaerah"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/input"
+            android:hint="@string/hint_masukkan_daerah"
+            android:inputType="text|textAutoComplete"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextAsalDaerah"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLanjut"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#008080"
+                android:text="@string/lanjut"
+                android:textColor="@color/design_default_color_background"
+                app:cornerRadius="16dp" />
+
+            <Button
+                android:id="@+id/buttonLewati"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_lewati"
+                android:text="@string/lewati"
+                android:textColor="#008080" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

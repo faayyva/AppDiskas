@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Diskas</string>
+    <string name="hintNoHP">Masukkan Nomor Seluler</string>
+    <string name="input_email">Masukkan Email</string>
+    <string name="judulIntro">Isilah data Anda sekarang dan bergabunglah dengan Diskas</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="masukkan_konfirmasi_password">Masukkan Konfirmasi Password</string>
+    <string name="no_hp">No HP</string>
+    <string name="input_nama">Masukkan Nama Lengkap</string>
+    <string name="judul2">Akun baru mu berhasil dibuat,tekan mulai untuk melanjutkan</string>
+    <string name="hint_masukkan_daerah">\t Masukkan Asal Daerah</string>
+    <string name="text_asal_daerah">Asal Daerah</string>
+    <string name="text_asal_univ">Asal Universitas</string>
+    <string name="text_masukkan_universitas">\t Masukkan Universitas</string>
+    <string name="textview_email">Email</string>
+    <string name="textview_nama">Nama Lengkap</string>
+    <string name="yuk_isi_datamu_agar_kami_tau_apa_yang_kamu_mau">Yuk isi datamu, agar kami tau apa yang kamu mau!</string>
+    <string name="lewati">Lewati</string>
+    <string name="lanjut">Lanjut</string>
+</resources>
