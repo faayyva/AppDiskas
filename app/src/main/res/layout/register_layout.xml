@@ -118,6 +118,7 @@
                 android:layout_below="@id/textViewKonfirmasiPassword"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/input"
+                android:inputType="text|textPassword|textAutoComplete"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 android:hint="@string/masukkan_konfirmasi_password"/>
