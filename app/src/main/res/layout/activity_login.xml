@@ -2,12 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="40dp"
-    android:layout_marginRight="40dp"
-    android:layout_marginTop="60dp"
-    android:layout_marginBottom="40dp">
-
+    android:layout_height="wrap_content"
+    android:layout_marginTop= "150dp"
+    android:layout_marginBottom="150dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,18 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/_x31_0_1" />
-
-        <TextView
-            android:id="@+id/judulIntro"
-            android:layout_below="@id/imageView"
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textSize="16dp"
-            android:text="@string/judulIntro"
-            android:textStyle="bold"/>
-
         <TextView
             android:id="@+id/textViewEmail"
             android:layout_width="wrap_content"
@@ -40,34 +27,13 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editTextEmailLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textViewEmail"
             android:layout_marginTop="8dp"
             android:background="@drawable/input"
             android:hint="@string/input_email"
-            android:inputType="text|textAutoComplete"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:paddingStart="15dp"/>
-
-        <TextView
-            android:id="@+id/textViewNamaLengkap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/textview_nama"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/editTextnama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black"
-            android:background="@drawable/input"
-            android:hint="@string/input_nama"
             android:inputType="text|textAutoComplete"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -88,7 +54,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/editTextPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textViewPassword"
@@ -100,37 +66,30 @@
                 android:hint="@string/masukkan_password"/>
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/konfirmasiPasswordTextInputLayout"
+            android:id="@+id/konfirmasiPasswordLoginTextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColorHint="#8D8D8D">
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editTextKonfirmasiPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textViewKonfirmasiPassword"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/input"
-                android:inputType="text|textPassword|textAutoComplete"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:hint="@string/masukkan_konfirmasi_password"/>
         </com.google.android.material.textfield.TextInputLayout>
-        <TextView
-            android:id="@+id/textViewKonfirmasiPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/konfirmasi_password"
-            android:textStyle="bold"/>
         <Button
-            android:id="@+id/buttonDaftar"
+            android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/editTextKonfirmasiPassword"
             android:layout_marginTop="16dp"
             android:backgroundTint="#008080"
-            android:text="Daftar"
+            android:text="Login"
             app:cornerRadius="16dp" />
+        <Button
+            android:id="@+id/buttonDaftar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Daftar"
+            android:textSize="12sp"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/white"
+            android:textColor="#008080"/>
     </LinearLayout>
+
 </RelativeLayout>
